@@ -1,0 +1,20 @@
+# GetOwnershipsByItemRequest
+
+## Example Usage
+
+```typescript
+import { GetOwnershipsByItemRequest } from "@rarible/protocol-mcp/models/operations";
+
+let value: GetOwnershipsByItemRequest = {
+  itemId:
+    "ETHEREUM:0xb66a603f4cfe17e3d27b87a8bfcad319856518b8:32292934596187112148346015918544186536963932779440027682601542850818403729410",
+};
+```
+
+## Fields
+
+| Field                                                                                                                             | Type                                                                                                                              | Required                                                                                                                          | Description                                                                                                                       | Example                                                                                                                           |
+| --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| `itemId`                                                                                                                          | *string*                                                                                                                          | :heavy_check_mark:                                                                                                                | Item Id, has format `ETHEREUM:${token}:${tokenId}`                                                                                | ETHEREUM:0xb66a603f4cfe17e3d27b87a8bfcad319856518b8:32292934596187112148346015918544186536963932779440027682601542850818403729410 |
+| `continuation`                                                                                                                    | *string*                                                                                                                          | :heavy_minus_sign:                                                                                                                | Continuation token from the previous response                                                                                     |                                                                                                                                   |
+| `size`                                                                                                                            | *number*                                                                                                                          | :heavy_minus_sign:                                                                                                                | The number of items to return                                                                                                     |                                                                                                                                   |

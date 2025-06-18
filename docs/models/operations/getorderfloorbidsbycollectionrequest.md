@@ -1,0 +1,29 @@
+# GetOrderFloorBidsByCollectionRequest
+
+## Example Usage
+
+```typescript
+import { GetOrderFloorBidsByCollectionRequest } from "@rarible/protocol-mcp/models/operations";
+
+let value: GetOrderFloorBidsByCollectionRequest = {
+  collectionId: "ETHEREUM:0xb66a603f4cfe17e3d27b87a8bfcad319856518b8",
+  origin: "ETHEREUM:0x4765273c477c2dc484da4f1984639e943adccfeb",
+  currencies: [
+    "ETHEREUM:0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+  ],
+};
+```
+
+## Fields
+
+| Field                                                           | Type                                                            | Required                                                        | Description                                                     | Example                                                         |
+| --------------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------- |
+| `platform`                                                      | [models.Platform](../../models/platform.md)                     | :heavy_minus_sign:                                              | The platform where the order was created                        |                                                                 |
+| `collectionId`                                                  | *string*                                                        | :heavy_check_mark:                                              | Collection Id, has format `ETHEREUM:${token}`                   | ETHEREUM:0xb66a603f4cfe17e3d27b87a8bfcad319856518b8             |
+| `origin`                                                        | *string*                                                        | :heavy_minus_sign:                                              | Address of the consumer to receive the commission for the order | ETHEREUM:0x4765273c477c2dc484da4f1984639e943adccfeb             |
+| `status`                                                        | [models.OrderStatus](../../models/orderstatus.md)[]             | :heavy_minus_sign:                                              | Order status                                                    |                                                                 |
+| `currencies`                                                    | *string*[]                                                      | :heavy_minus_sign:                                              | Currencies for bids                                             |                                                                 |
+| `start`                                                         | *number*                                                        | :heavy_minus_sign:                                              | Lower time border of data (timestamp)                           |                                                                 |
+| `end`                                                           | *number*                                                        | :heavy_minus_sign:                                              | Upper time border of data (timestamp)                           |                                                                 |
+| `continuation`                                                  | *string*                                                        | :heavy_minus_sign:                                              | Continuation token from the previous response                   |                                                                 |
+| `size`                                                          | *number*                                                        | :heavy_minus_sign:                                              | The number of items to return                                   |                                                                 |

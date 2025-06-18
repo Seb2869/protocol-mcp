@@ -1,0 +1,36 @@
+# PrepareOrderTransactionRequest
+
+## Example Usage
+
+```typescript
+import { PrepareOrderTransactionRequest } from "@rarible/protocol-mcp/models/operations";
+
+let value: PrepareOrderTransactionRequest = {
+  id:
+    "ETHEREUM:0x19f487016770542dc6137b06499a4f7b42c9580f12d85d6347964b03b7682143",
+  prepareOrderTxForm: {
+    maker: "ETHEREUM:0x4765273c477c2dc484da4f1984639e943adccfeb",
+    taker: "ETHEREUM:0x4765273c477c2dc484da4f1984639e943adccfeb",
+    amount: "123456",
+    payouts: [
+      {
+        account: "ETHEREUM:0x4765273c477c2dc484da4f1984639e943adccfeb",
+        value: 443524,
+      },
+    ],
+    originFees: [
+      {
+        account: "ETHEREUM:0x4765273c477c2dc484da4f1984639e943adccfeb",
+        value: 450034,
+      },
+    ],
+  },
+};
+```
+
+## Fields
+
+| Field                                                                       | Type                                                                        | Required                                                                    | Description                                                                 | Example                                                                     |
+| --------------------------------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| `id`                                                                        | *string*                                                                    | :heavy_check_mark:                                                          | Order Id, has format 'ETHEREUM:${id}'                                       | ETHEREUM:0x19f487016770542dc6137b06499a4f7b42c9580f12d85d6347964b03b7682143 |
+| `prepareOrderTxForm`                                                        | [models.PrepareOrderTxForm](../../models/prepareordertxform.md)             | :heavy_check_mark:                                                          | N/A                                                                         |                                                                             |
