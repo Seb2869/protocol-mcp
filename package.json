@@ -26,7 +26,8 @@
     "lint": "eslint --cache --max-warnings=0 src",
     "build:mcp": "bun src/mcp-server/build.mts",
     "build": "npm run build:mcp && tshy",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "test": "pwd"
   },
   "peerDependencies": {
     "@modelcontextprotocol/sdk": ">=1.5.0 <1.10.0",
