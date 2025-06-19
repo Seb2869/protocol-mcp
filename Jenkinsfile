@@ -1,8 +1,10 @@
-@Library('shared-library') _
+@Library('shared-library@feature/foundry') _
 
 def pipelineConfig = [
-  "baseImageTag": "20-bullseye-slim"
+  "JSpublicLibrary": "true",
+  "pkgRepoName": "npmjs-org",
+  "buildWith": "nodetrufflefoundry",
+  "baseImageTag": "20.18.3-bullseye"
 ]
 
-
-pipelineAppCI(pipelineConfig)
+pipelinePackageRelease(pipelineConfig)
