@@ -27,7 +27,8 @@
     "build:mcp": "bun src/mcp-server/build.mts",
     "build": "npm run build:mcp && tshy",
     "prepublishOnly": "npm run build",
-    "test": "pwd"
+    "test": "pwd",
+    "release": "npm publish"
   },
   "peerDependencies": {
     "@modelcontextprotocol/sdk": ">=1.5.0 <1.10.0",
