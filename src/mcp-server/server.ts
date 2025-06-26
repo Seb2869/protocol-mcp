@@ -28,11 +28,6 @@ import { tool$currenciesAndRatesGetUsdRate } from "./tools/currenciesAndRatesGet
 import { tool$domainLookupResolve } from "./tools/domainLookupResolve.js";
 import { tool$encodeOperationsEncode } from "./tools/encodeOperationsEncode.js";
 import { tool$indexerBlocksGetLatestIndexedBlock } from "./tools/indexerBlocksGetLatestIndexedBlock.js";
-import { tool$nftActivitiesGetActivitiesByCollection } from "./tools/nftActivitiesGetActivitiesByCollection.js";
-import { tool$nftActivitiesGetActivitiesByItem } from "./tools/nftActivitiesGetActivitiesByItem.js";
-import { tool$nftActivitiesGetActivitiesByUser } from "./tools/nftActivitiesGetActivitiesByUser.js";
-import { tool$nftActivitiesGetActivitiesByUsers } from "./tools/nftActivitiesGetActivitiesByUsers.js";
-import { tool$nftActivitiesGetAllActivities } from "./tools/nftActivitiesGetAllActivities.js";
 import { tool$nftActivitiesGetAllActivitiesSync } from "./tools/nftActivitiesGetAllActivitiesSync.js";
 import { tool$nftActivitiesGetSalesChart } from "./tools/nftActivitiesGetSalesChart.js";
 import { tool$nftCollectionsGenerateTokenId } from "./tools/nftCollectionsGenerateTokenId.js";
@@ -180,12 +175,7 @@ export function createMCPServer(deps: {
   tool(tool$nftSalesGetOrderBidsByItem);
   tool(tool$nftSalesGetOrderFloorBidsByCollection);
   tool(tool$nftSalesGetOrderFees);
-  tool(tool$nftActivitiesGetActivitiesByUser);
-  tool(tool$nftActivitiesGetActivitiesByUsers);
-  tool(tool$nftActivitiesGetActivitiesByItem);
-  tool(tool$nftActivitiesGetActivitiesByCollection);
   tool(tool$nftActivitiesGetAllActivitiesSync);
-  tool(tool$nftActivitiesGetAllActivities);
   tool(tool$nftActivitiesGetSalesChart);
   tool(tool$nftCollectionsGetCollectionById);
   tool(tool$nftCollectionsGenerateTokenId);

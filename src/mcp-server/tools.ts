@@ -97,6 +97,14 @@ export function createRegisterTool(
   allowedScopes: Set<MCPScope>,
   allowedTools?: Set<string>,
 ): <A extends ZodRawShape | undefined>(tool: ToolDefinition<A>) => void {
+  // Standard note to ensure every tool description shows the required
+  // blockchain-prefixed address format.
+  const ADDRESS_NOTE =
+    "\n\nNote: Addresses must include a blockchain type prefix, e.g., ETHEREUM:0x28e0A9154Ed24988f30B743b5F3Cf060CC4234C0"
+    + "For example, an Ethereum address must use the ETHEREUM: prefix, POLYGON also ETHEREUM prefix, ECLIPSE also SOLANA prefix: or any other prefix. "
+    + "supported blockchain type prefixes: APTOS|ETHEREUM|FLOW|SOLANA"
+    + "\n\nWhen specifying blockchains in the 'blockchains' parameter, use the actual blockchain name (POLYGON, ARBITRUM, BASE, etc.), ";
+
   return <A extends ZodRawShape | undefined>(tool: ToolDefinition<A>): void => {
     if (allowedTools && !allowedTools.has(tool.name)) {
       return;
@@ -114,12 +122,21 @@ export function createRegisterTool(
       return;
     }
 
+    // Append the address-format note unless the description already
+    // contains a similar hint.
+    const needsNote =
+      !tool.description.includes("ETHEREUM:")
+      && !tool.description.toLowerCase().includes("blockchain prefix");
+    const descriptionWithNote = needsNote
+      ? `${tool.description}${ADDRESS_NOTE}`
+      : tool.description;
+
     if (tool.args) {
-      server.tool(tool.name, tool.description, tool.args, async (args, ctx) => {
+      server.tool(tool.name, descriptionWithNote, tool.args, async (args, ctx) => {
         return tool.tool(sdk, args, ctx);
       });
     } else {
-      server.tool(tool.name, tool.description, async (ctx) => {
+      server.tool(tool.name, descriptionWithNote, async (ctx) => {
         return tool.tool(sdk, ctx);
       });
     }

@@ -14,7 +14,19 @@ export const tool$nftItemsGetItemsByOwner: ToolDefinition<typeof args> = {
   name: "NFT-items-get-items-by-owner",
   description: `Get NFT owned by user
 
-Returns list of NFTs belong to specified user and sorted by \`last updated\` date`,
+Returns list of NFTs belong to specified user and sorted by \`last updated\` date`
++ "request example: "
++ "{\n"
++ "  \"request\": {\n"
++ "    \"blockchains\": [\n"
++ "      \"POLYGON\"\n"
++ "    ],\n"
++ "    \"owner\": \"ETHEREUM:0x28e0A9154Ed24988f30B743b5F3Cf060CC4234C0\",\n"
++ "    \"continuation\": \"\",\n"
++ "    \"size\": 5,\n"
++ "    \"searchEngine\": \"V1\"\n"
++ "  }\n"
++ "}",
   args,
   tool: async (client, args, ctx) => {
     const [result, apiCall] = await nftItemsGetItemsByOwner(
