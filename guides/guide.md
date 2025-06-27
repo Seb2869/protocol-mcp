@@ -49,10 +49,6 @@ yarn add @rarible/protocol-mcp zod
 ### Usage
 - In Claude, use queries like “Fetch NFT details for ID ETHEREUM:0x...” or “Get collection floor price.”
 - Claude maps these to SDK methods (e.g., `nftItems.getItemById`) and returns formatted results.
-- List available methods:
-  ```bash
-  npx -y --package @rarible/protocol-mcp -- mcp start --help
-  ```
 
 ### Troubleshooting
 - Verify API key and Node.js version (`node -v`).
@@ -91,7 +87,7 @@ Run the SDK as a local or cloud-hosted MCP server for direct API access.
   npx @modelcontextprotocol/inspector
   ```
 - Connect to mcp server an run tools:
-  
+
 
 ### SDK Integration
 1. **Install SDK**:
