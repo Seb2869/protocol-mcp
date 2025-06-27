@@ -17,7 +17,7 @@ Generate order encode data for sign operations
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -78,7 +78,7 @@ import { encodeOperationsEncode } from "@rarible/protocol-mcp/funcs/encodeOperat
 // Use `RaribleProtocolMcpCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const raribleProtocolMcp = new RaribleProtocolMcpCore({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {

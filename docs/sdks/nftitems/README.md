@@ -30,7 +30,7 @@ Returns NFT Item by Id
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -56,7 +56,7 @@ import { nftItemsGetItemById } from "@rarible/protocol-mcp/funcs/nftItemsGetItem
 // Use `RaribleProtocolMcpCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const raribleProtocolMcp = new RaribleProtocolMcpCore({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -109,7 +109,7 @@ Returns NFT Items by specified list of Ids
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -137,7 +137,7 @@ import { nftItemsGetItemByIds } from "@rarible/protocol-mcp/funcs/nftItemsGetIte
 // Use `RaribleProtocolMcpCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const raribleProtocolMcp = new RaribleProtocolMcpCore({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -192,7 +192,7 @@ Returns NFT royalties by Id
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -218,7 +218,7 @@ import { nftItemsGetItemRoyaltiesById } from "@rarible/protocol-mcp/funcs/nftIte
 // Use `RaribleProtocolMcpCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const raribleProtocolMcp = new RaribleProtocolMcpCore({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -270,7 +270,7 @@ Reloads NFT metadata from the source. If source not available, old metadata stay
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -295,7 +295,7 @@ import { nftItemsResetItemMeta } from "@rarible/protocol-mcp/funcs/nftItemsReset
 // Use `RaribleProtocolMcpCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const raribleProtocolMcp = new RaribleProtocolMcpCore({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -346,7 +346,7 @@ Returns list of NFTs belong to specified user and sorted by `last updated` date
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -375,7 +375,7 @@ import { nftItemsGetItemsByOwner } from "@rarible/protocol-mcp/funcs/nftItemsGet
 // Use `RaribleProtocolMcpCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const raribleProtocolMcp = new RaribleProtocolMcpCore({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -430,7 +430,7 @@ Returns list of NFTs created by specified user and sorted by `last updated` date
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -459,7 +459,7 @@ import { nftItemsGetItemsByCreator } from "@rarible/protocol-mcp/funcs/nftItemsG
 // Use `RaribleProtocolMcpCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const raribleProtocolMcp = new RaribleProtocolMcpCore({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -514,7 +514,7 @@ Returns list of NFTs from specified collection and sorted by `last updated` date
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -540,7 +540,7 @@ import { nftItemsGetItemsByCollection } from "@rarible/protocol-mcp/funcs/nftIte
 // Use `RaribleProtocolMcpCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const raribleProtocolMcp = new RaribleProtocolMcpCore({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -592,7 +592,7 @@ Returns list of NFTs belong to specified user and sorted by `last updated` date 
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -618,7 +618,7 @@ import { nftItemsGetItemsByOwnerWithOwnership } from "@rarible/protocol-mcp/func
 // Use `RaribleProtocolMcpCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const raribleProtocolMcp = new RaribleProtocolMcpCore({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -672,7 +672,7 @@ Returns all NFT Items in accordance with specified filters and sorted by `last u
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -700,7 +700,7 @@ import { nftItemsGetAllItems } from "@rarible/protocol-mcp/funcs/nftItemsGetAllI
 // Use `RaribleProtocolMcpCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const raribleProtocolMcp = new RaribleProtocolMcpCore({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -754,7 +754,7 @@ Returns aggregation of existing traits for specified collections with counter fo
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -788,7 +788,7 @@ import { nftItemsQueryTraits } from "@rarible/protocol-mcp/funcs/nftItemsQueryTr
 // Use `RaribleProtocolMcpCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const raribleProtocolMcp = new RaribleProtocolMcpCore({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -848,7 +848,7 @@ Returns the rarity of the trait
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -875,7 +875,7 @@ import { nftItemsQueryTraitsWithRarity } from "@rarible/protocol-mcp/funcs/nftIt
 // Use `RaribleProtocolMcpCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const raribleProtocolMcp = new RaribleProtocolMcpCore({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -928,7 +928,7 @@ Returns Lazy NFT Item by Id
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -954,7 +954,7 @@ import { nftItemsGetLazyItemById } from "@rarible/protocol-mcp/funcs/nftItemsGet
 // Use `RaribleProtocolMcpCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const raribleProtocolMcp = new RaribleProtocolMcpCore({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -1009,7 +1009,7 @@ Create Lazy NFT (supported only for some blockchains)
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -1055,7 +1055,7 @@ import { nftItemsMintLazyItem } from "@rarible/protocol-mcp/funcs/nftItemsMintLa
 // Use `RaribleProtocolMcpCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const raribleProtocolMcp = new RaribleProtocolMcpCore({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -1130,7 +1130,7 @@ Deletes Lazy NFT (supported only for some blockchains)
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -1163,7 +1163,7 @@ import { nftItemsBurnLazyItem } from "@rarible/protocol-mcp/funcs/nftItemsBurnLa
 // Use `RaribleProtocolMcpCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const raribleProtocolMcp = new RaribleProtocolMcpCore({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {

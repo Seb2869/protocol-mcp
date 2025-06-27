@@ -22,7 +22,7 @@ Global collection statistics by ID
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -48,7 +48,7 @@ import { collectionStatisticsGetGlobalCollectionStatistics } from "@rarible/prot
 // Use `RaribleProtocolMcpCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const raribleProtocolMcp = new RaribleProtocolMcpCore({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -100,7 +100,7 @@ Global collection statistics by IDs
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -126,7 +126,7 @@ import { collectionStatisticsGetGlobalCollectionStatisticsByIds } from "@rarible
 // Use `RaribleProtocolMcpCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const raribleProtocolMcp = new RaribleProtocolMcpCore({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -178,7 +178,7 @@ Period-based collection statistics by ID
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -205,7 +205,7 @@ import { collectionStatisticsGetPeriodCollectionStatistics } from "@rarible/prot
 // Use `RaribleProtocolMcpCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const raribleProtocolMcp = new RaribleProtocolMcpCore({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -258,7 +258,7 @@ Period-based collection statistics by IDs
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -288,7 +288,7 @@ import { collectionStatisticsGetPeriodCollectionStatisticsByIds } from "@rarible
 // Use `RaribleProtocolMcpCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const raribleProtocolMcp = new RaribleProtocolMcpCore({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -344,7 +344,7 @@ Returns list of owners of items in the collection along with the number of owned
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -370,7 +370,7 @@ import { collectionStatisticsGetOwners } from "@rarible/protocol-mcp/funcs/colle
 // Use `RaribleProtocolMcpCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const raribleProtocolMcp = new RaribleProtocolMcpCore({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -422,7 +422,7 @@ Returns list of bid prices with number of bids and bidders
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -448,7 +448,7 @@ import { collectionStatisticsGetBidsByPrice } from "@rarible/protocol-mcp/funcs/
 // Use `RaribleProtocolMcpCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const raribleProtocolMcp = new RaribleProtocolMcpCore({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {

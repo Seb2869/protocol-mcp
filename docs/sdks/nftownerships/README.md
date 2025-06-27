@@ -21,7 +21,7 @@ Returns Ownership by Id
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -47,7 +47,7 @@ import { nftOwnershipsGetOwnershipById } from "@rarible/protocol-mcp/funcs/nftOw
 // Use `RaribleProtocolMcpCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const raribleProtocolMcp = new RaribleProtocolMcpCore({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -100,7 +100,7 @@ Returns Ownerships by specified list of Ids
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -128,7 +128,7 @@ import { nftOwnershipsGetOwnershipsByIds } from "@rarible/protocol-mcp/funcs/nft
 // Use `RaribleProtocolMcpCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const raribleProtocolMcp = new RaribleProtocolMcpCore({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -182,7 +182,7 @@ Returns list of NFTs Ownerships from specified collection and sorted by `last up
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -208,7 +208,7 @@ import { nftOwnershipsGetOwnershipsByCollection } from "@rarible/protocol-mcp/fu
 // Use `RaribleProtocolMcpCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const raribleProtocolMcp = new RaribleProtocolMcpCore({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -260,7 +260,7 @@ Returns list of NFTs Ownerships for specified NFT and sorted by `last updated` d
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -286,7 +286,7 @@ import { nftOwnershipsGetOwnershipsByItem } from "@rarible/protocol-mcp/funcs/nf
 // Use `RaribleProtocolMcpCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const raribleProtocolMcp = new RaribleProtocolMcpCore({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -338,7 +338,7 @@ Returns list of collection with owned items by specified owner
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -369,7 +369,7 @@ import { nftOwnershipsGetCollectionsWithOwnedItems } from "@rarible/protocol-mcp
 // Use `RaribleProtocolMcpCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const raribleProtocolMcp = new RaribleProtocolMcpCore({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {

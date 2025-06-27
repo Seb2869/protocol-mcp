@@ -17,7 +17,7 @@ Resolves domain's blockchain address by its name (for example, from ENS domains 
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -43,7 +43,7 @@ import { domainLookupResolve } from "@rarible/protocol-mcp/funcs/domainLookupRes
 // Use `RaribleProtocolMcpCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
 const raribleProtocolMcp = new RaribleProtocolMcpCore({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {

@@ -186,7 +186,7 @@ For supported JavaScript runtimes, please consult [RUNTIMES.md](RUNTIMES.md).
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -213,14 +213,14 @@ This SDK supports the following security scheme globally:
 
 | Name         | Type   | Scheme  | Environment Variable              |
 | ------------ | ------ | ------- | --------------------------------- |
-| `apiKeyAuth` | apiKey | API key | `RARIBLEPROTOCOLMCP_API_KEY_AUTH` |
+| `apiKeyAuth` | apiKey | API key | `RARIBLE_API_KEY` |
 
 To authenticate with the API the `apiKeyAuth` parameter must be set when initializing the SDK client instance. For example:
 ```typescript
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -494,7 +494,7 @@ To change the default retry strategy for a single API call, simply provide a ret
 import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -537,7 +537,7 @@ const raribleProtocolMcp = new RaribleProtocolMcp({
     },
     retryConnectionErrors: false,
   },
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -579,7 +579,7 @@ import {
 } from "@rarible/protocol-mcp/models/errors";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -660,7 +660,7 @@ import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
   environment: "testnet-api",
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {
@@ -685,7 +685,7 @@ import { RaribleProtocolMcp } from "@rarible/protocol-mcp";
 
 const raribleProtocolMcp = new RaribleProtocolMcp({
   serverURL: "https://api.rarible.org",
-  apiKeyAuth: process.env["RARIBLEPROTOCOLMCP_API_KEY_AUTH"] ?? "",
+  apiKeyAuth: process.env["RARIBLE_API_KEY"] ?? "",
 });
 
 async function run() {

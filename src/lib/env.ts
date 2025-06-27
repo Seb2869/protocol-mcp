@@ -7,13 +7,13 @@ import { dlv } from "./dlv.js";
 import * as z from "zod";
 
 export interface Env {
-  RARIBLEPROTOCOLMCP_API_KEY_AUTH?: string | undefined;
+  RARIBLE_API_KEY?: string | undefined;
 
   RARIBLEPROTOCOLMCP_DEBUG?: boolean | undefined;
 }
 
 export const envSchema: z.ZodType<Env, z.ZodTypeDef, unknown> = z.object({
-  RARIBLEPROTOCOLMCP_API_KEY_AUTH: z.string().optional(),
+  RARIBLE_API_KEY: z.string().optional(),
 
   RARIBLEPROTOCOLMCP_DEBUG: z.coerce.boolean().optional(),
 });

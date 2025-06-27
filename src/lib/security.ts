@@ -244,7 +244,7 @@ export function resolveGlobalSecurity(
       {
         fieldName: "X-API-KEY",
         type: "apiKey:header",
-        value: security?.apiKeyAuth ?? env().RARIBLEPROTOCOLMCP_API_KEY_AUTH,
+        value: security?.apiKeyAuth ?? env().RARIBLE_API_KEY,
       },
     ],
   );
