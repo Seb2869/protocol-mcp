@@ -12,7 +12,7 @@ This guide covers three key ways to get started with the `@rarible/protocol-mcp`
 - **Tools**: Familiarity with TypeScript/JavaScript, terminal commands, and optionally Postman or OpenAPI Generator.
 
 ## Quick Start: Claude Integration
-Integrate the SDK with Claude to enable AI-driven interactions using the MCP server.
+Integrate the SDK with Claude/OpenAI to enable AI-driven interactions using the MCP server.
 
 ### Installation
 Install the SDK:
