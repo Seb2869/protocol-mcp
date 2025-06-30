@@ -1,21 +1,19 @@
 # 🏁 Introduction
 
 ## Overview
-The Model Context Protocol (MCP) is a developer-friendly, type-safe TypeScript SDK designed to interact seamlessly with the Rarible Protocol API, specifically through the `@rarible/protocol-mcp` package. It provides a robust and intuitive interface for developers to build applications that leverage the power of the Rarible ecosystem, enabling interactions with NFTs, collections, marketplaces, and more.
+The Model Context Protocol (MCP) is a developer-friendly, type-safe TypeScript SDK designed to interact seamlessly with the Rarible Protocol API via LLM, specifically through the `@rarible/protocol-mcp` package. It provides a robust and intuitive interface for developers to build applications that leverage the power of the Rarible ecosystem, enabling interactions with NFTs, collections, marketplaces, and more.
 
 The MCP SDK simplifies complex blockchain interactions by offering a well-structured, type-safe environment, ensuring reliability and ease of use. Built with modern JavaScript runtimes in mind, it supports both CommonJS and ES Modules (ESM) and can be integrated into various environments, including browser-based and serverless applications.
 
 ## Purpose and Key Features
 The `@rarible/protocol-mcp` SDK is designed to streamline development for projects interacting with the Rarible Protocol. Its key features include:
 
-- **Type-Safe API**: Leverage TypeScript's strong typing to catch errors early and improve code reliability.
+- **MCP Server Integration**: Run the SDK as an MCP server for AI-driven applications, with support for tools like Claude and Cursor.
 - **Comprehensive NFT Operations**: Access a wide range of methods for managing NFT items, collections, ownerships, sales, and statistics.
-- **API-Key Authentication**: Securely interact with the Rarible API using API keys, which can be easily obtained and configured.
-- **Retry and Error Handling**: Built-in support for retry strategies and detailed error handling to ensure robust applications.
+- **Type-Safe API**: Leverage TypeScript's strong typing to catch errors early and improve code reliability.
 - **Standalone Functions**: Modular functions for lightweight integration in environments where bundle size is a concern.
 - **Customizable HTTP Client**: Flexibility to customize HTTP requests with hooks for advanced use cases.
-- **Debugging Support**: Enable detailed logging for development and debugging purposes.
-- **MCP Server Integration**: Run the SDK as an MCP server for AI-driven applications, with support for tools like Claude and Cursor.
+
 
 This SDK is ideal for building applications that need to query NFT data, manage collections, execute marketplace transactions, or integrate with Rarible's decentralized ecosystem.
 

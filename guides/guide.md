@@ -1,6 +1,6 @@
 # 📖 Guide to Using @rarible/protocol-mcp
 
-This guide covers three key ways to get started with the `@rarible/protocol-mcp` SDK: integrating with Claude, self-hosting the MCP server, and leveraging the OpenAPI specification for custom integrations.
+This guide covers three key ways to get started with the `@rarible/protocol-mcp` SDK: integrating with Claude, integrating with ChatGPT, self-hosting the MCP server, and leveraging the OpenAPI specification for custom integrations.
 
 ## Prerequisites
 - **Node.js**: Version 20 or higher.
@@ -47,12 +47,63 @@ yarn add @rarible/protocol-mcp zod
 2. **Restart Claude**
 
 ### Usage
-- In Claude, use queries like “Fetch NFT details for ID ETHEREUM:0x...” or “Get collection floor price.”
+- In Claude, use queries like "Fetch NFT details for ID ETHEREUM:0x..." or "Get collection floor price."
 - Claude maps these to SDK methods (e.g., `nftItems.getItemById`) and returns formatted results.
 
 ### Troubleshooting
 - Verify API key and Node.js version (`node -v`).
 - Check Claude logs for errors like `UnionApiErrorBadRequest`.
+
+## ChatGPT Integration
+Integrate the SDK with ChatGPT using OpenAI's MCP support to enable AI-driven interactions.
+
+### Prerequisites
+- **OpenAI API Key**: Obtain from [https://platform.openai.com/api-keys](https://platform.openai.com/api-keys)
+- **MCP Server**: A publicly accessible MCP server endpoint (see Self-Hosting section below)
+- **Rarible API Key**: Set on your MCP server
+
+### Setup
+1. **Deploy MCP Server**: Ensure your MCP server is running and accessible via HTTPS
+2. **Configure ChatGPT**: Use the OpenAI API with MCP tools configuration
+
+### Usage Example
+Use the OpenAI API with MCP tools to interact with Rarible Protocol:
+
+```bash
+curl https://api.openai.com/v1/responses \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer YOUR_OPENAI_API_KEY" \
+  -d '{
+    "model": "o4-mini-2025-04-16",
+    "tools": [
+      {
+        "type": "mcp",
+        "server_label": "rarible-protocol",
+        "server_url": "https://your-mcp-server.com/sse",
+        "require_approval": "never"
+      }
+    ],
+    "input": "please find NFT tokens for the owner ETHEREUM:0x28e0A9154Ed24988f30B743b5F3Cf060CC4234C0"
+  }'
+```
+
+### Configuration Parameters
+- **`model`**: Use compatible OpenAI models (e.g., `o4-mini-2025-04-16`)
+- **`server_label`**: Identifier for your MCP server
+- **`server_url`**: Public HTTPS endpoint of your MCP server
+- **`require_approval`**: Set to `"never"` for automatic tool execution
+
+### Common Use Cases
+- **NFT Discovery**: "Find NFTs owned by address ETHEREUM:0x..."
+- **Collection Analysis**: "Get floor price for collection X"
+- **Market Data**: "Show recent sales for NFT Y"
+- **Ownership Queries**: "List all collections owned by address Z"
+
+### Troubleshooting
+- **401 Unauthorized**: Verify your OpenAI API key
+- **MCP Server Errors**: Ensure your server is publicly accessible and HTTPS-enabled
+- **Rate Limits**: Handle OpenAI API rate limits according to your plan
+- **Tool Execution**: Check MCP server logs for Rarible API errors
 
 ## Self-Hosting Quick Start
 Run the SDK as a local or cloud-hosted MCP server for direct API access.
@@ -127,7 +178,8 @@ Run the SDK as a local or cloud-hosted MCP server for direct API access.
 
 ### Troubleshooting
 - Verify API key permissions and spec version.
-- Handle rate limits (`429` errors) per Rarible’s documentation.
+- Handle rate limits (`429` errors) per Rarible's documentation.
 
 ## Next Steps
 - Explore [Rarible Protocol documentation](https://rarible.org) for advanced features.
+
